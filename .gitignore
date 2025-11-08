@@ -1,0 +1,81 @@
+# =======================================
+# Node.js / TypeScript / Next.js Project
+# =======================================
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+.next/
+out/
+dist/
+build/
+.cache/
+coverage/
+
+# Supabase generated files
+supabase/.branches
+supabase/.temp
+supabase/functions/.netlify
+supabase/.env
+
+# Logs
+logs
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local database / temporary files
+*.sqlite
+*.sqlite-journal
+tmp/
+temp/
+*.tmp
+
+# TypeScript build artifacts
+*.tsbuildinfo
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Optional caches
+.cache/
+.parcel-cache/
+.next/cache/
+.eslintcache
+
+# Storybook build
+storybook-static/
+
+# Lock files (if using different package managers across environments)
+# Uncomment one based on your setup
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# =======================================
+# End of .gitignore
+# =======================================
