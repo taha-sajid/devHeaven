@@ -49,10 +49,10 @@ const limiter = rateLimit({
     legacyHeaders: false,
 });
 
-app.use('/api/', limiter);
+app.use('/api/v1', limiter);
 
 // API routes
-app.use('/api', routes);
+app.use('/api/v1', routes);
 
 // Root endpoint
 app.get('/', (req, res) => {

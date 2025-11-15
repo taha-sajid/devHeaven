@@ -42,7 +42,7 @@ export const generateCode = async (request: GenerateCodeRequest): Promise<Genera
 
     const generationTime = Date.now() - startTime;
     const code = response.content;
-    const parsedFiles = parseGeneratedCode(code);
+    const parsedFiles = parseGeneratedCode(code); 
 
     // Map filename to name to match the expected type
     const files = parsedFiles.map(f => ({
@@ -99,7 +99,7 @@ export async function* generateCodeStream(
 }
 
 // Helper to get available providers and models
-export const getAvailableConfig = () => {
+export const getAvailableConfig = () => { 
   return {
     providers: ProviderFactory.getAvailableProviders(),
     modelsByProvider: Object.fromEntries(
